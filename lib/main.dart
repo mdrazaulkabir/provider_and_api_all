@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:provider_and_api_all/api_using_provider/home1.dart';
 import 'package:provider_and_api_all/provider/counter_provider.dart';
 import 'package:provider_and_api_all/provider/home.dart';
 
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Home(),
+      home: Home1(),
     );
   }
 }
