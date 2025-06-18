@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:provider_and_api_all/api_using_provider/counter_provider1.dart';
 import 'package:provider_and_api_all/api_using_provider/home1.dart';
 import 'package:provider_and_api_all/provider/counter_provider.dart';
 import 'package:provider_and_api_all/provider/home.dart';
@@ -8,7 +9,7 @@ void main() {
   runApp(
     /// Providers are above [MyApp] instead of inside it, so that tests
     /// can use [MyApp] while mocking the providers
-    MultiProvider(providers: [ChangeNotifierProvider(create:(_)=>CounterProvider())],
+    MultiProvider(providers: [ChangeNotifierProvider(create:(_)=>UserProvider1())],
      child: const MyApp(),
     )
   );
